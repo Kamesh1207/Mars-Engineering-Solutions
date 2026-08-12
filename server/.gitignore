@@ -1,0 +1,13 @@
+# Dependencies
+node_modules/
+
+# Environment secrets
+.env
+
+# Database files (contain user PII)
+db/*.db
+db/*.json
+
+# OS files
+.DS_Store
+Thumbs.db

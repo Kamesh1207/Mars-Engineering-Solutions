@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Mars Engineering Solutions - Your trusted partner for HT & LT Electrical Works, Mechanical Works, Fire Fighting Systems, Civil Works, Fabrication, PEB, Interior & Plumbing Works in Tamil Nadu.">
+    <meta name="keywords"
+        content="engineering solutions, electrical works, mechanical works, civil works, fabrication, PEB, interior works, plumbing, Tamil Nadu, Thiruvallur">
+    <meta name="author" content="Mars Engineering Solutions">
+    <title>Mars Engineering Solutions | Complete Engineering Services</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800&family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader">
+            <div class="loader-gear">
+                <svg viewBox="0 0 100 100" class="gear-svg">
+                    <path
+                        d="M50 10 L54 2 L58 10 L62 4 L64 12 L70 8 L70 16 L76 14 L74 22 L80 22 L76 28 L82 30 L78 36 L84 40 L78 44 L82 50 L76 50 L78 56 L72 56 L74 62 L68 60 L68 66 L62 64 L60 70 L56 66 L52 70 L50 64 L46 68 L44 62 L38 64 L38 58 L32 58 L34 52 L28 50 L32 46 L26 42 L32 38 L28 34 L34 30 L30 26 L36 22 L34 16 L40 18 L40 12 L46 14 L46 8 L50 10Z"
+                        fill="none" stroke="currentColor" stroke-width="1.5" />
+                    <circle cx="50" cy="40" r="12" fill="none" stroke="currentColor" stroke-width="1.5" />
+                </svg>
+            </div>
+            <div class="loader-progress">
+                <div class="loader-progress-bar"></div>
+            </div>
+            <span class="loader-text">MARS ENGINEERING</span>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo" id="nav-logo">
+                <div class="logo-icon">
+                    <svg viewBox="0 0 40 40" class="logo-gear-icon">
+                        <circle cx="20" cy="20" r="8" fill="none" stroke="currentColor" stroke-width="2" />
+                        <line x1="20" y1="4" x2="20" y2="10" stroke="currentColor" stroke-width="2" />
+                        <line x1="20" y1="30" x2="20" y2="36" stroke="currentColor" stroke-width="2" />
+                        <line x1="4" y1="20" x2="10" y2="20" stroke="currentColor" stroke-width="2" />
+                        <line x1="30" y1="20" x2="36" y2="20" stroke="currentColor" stroke-width="2" />
+                        <line x1="8.7" y1="8.7" x2="13" y2="13" stroke="currentColor" stroke-width="2" />
+                        <line x1="27" y1="27" x2="31.3" y2="31.3" stroke="currentColor" stroke-width="2" />
+                        <line x1="8.7" y1="31.3" x2="13" y2="27" stroke="currentColor" stroke-width="2" />
+                        <line x1="27" y1="13" x2="31.3" y2="8.7" stroke="currentColor" stroke-width="2" />
+                    </svg>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-mars">MARS</span>
+                    <span class="logo-sub">Engineering Solutions</span>
+                </div>
+            </a>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#hero" class="nav-link active" data-section="hero">Home</a>
+                <a href="#about" class="nav-link" data-section="about">About</a>
+                <a href="#services" class="nav-link" data-section="services">Services</a>
+                <a href="#why-us" class="nav-link" data-section="why-us">Why Us</a>
+                <a href="#projects" class="nav-link" data-section="projects">Projects</a>
+                <a href="#customers" class="nav-link" data-section="customers">Customers</a>
+                <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+            </div>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-bg-image" style="background-image: url('images/hero_industrial.png');"></div>
+        <div class="hero-3d-overlay">
+            <canvas id="hero-3d-canvas"></canvas>
+        </div>
+        <div class="hero-gradient-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-badge animate-on-scroll">
+                <div class="badge-line"></div>
+                <span id="hero-typed-text">Trusted Engineering Partner</span>
+                <div class="badge-line"></div>
+            </div>
+            <h1 class="hero-title animate-on-scroll">
+                <span class="title-line"><span class="title-mars">MARS</span></span>
+                <span class="title-line title-sub">Engineering Solutions</span>
+            </h1>
+            <div class="hero-description animate-on-scroll">
+                <ul class="hero-points">
+                    <li>
+                        <i data-lucide="zap" class="hero-point-icon"></i>
+                        Electrical, Mechanical, Civil & Industrial Solutions
+                    </li>
+                    <li>
+                        <i data-lucide="building-2" class="hero-point-icon"></i>
+                        One-stop partner for all engineering needs
+                    </li>
+                    <li>
+                        <i data-lucide="map-pin" class="hero-point-icon"></i>
+                        Serving across Tamil Nadu
+                    </li>
+                </ul>
+            </div>
+            <div class="hero-cta animate-on-scroll">
+                <a href="#services" class="btn btn-primary">
+                    <span>Explore Services</span>
+                    <i data-lucide="arrow-right" class="btn-icon"></i>
+                </a>
+                <a href="#contact" class="btn btn-outline">
+                    <span>Get in Touch</span>
+                    <i data-lucide="phone" class="btn-icon"></i>
+                </a>
+            </div>
+            <div class="hero-stats animate-on-scroll">
+                <div class="stat-item">
+                    <span class="stat-number" data-target="8">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">Service Areas</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="500">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">Projects Done</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="100">0</span><span class="stat-plus">%</span>
+                    <span class="stat-label">Client Satisfaction</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow">
+                <i data-lucide="chevrons-down"></i>
+            </div>
+            <span>Scroll to explore</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="section-industrial-bg"></div>
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <div class="section-tag">
+                    <div class="tag-line"></div>
+                    <i data-lucide="building-2"></i>
+                    <span>Who We Are</span>
+                    <div class="tag-line"></div>
+                </div>
+                <h2 class="section-title">Built on <span class="text-gradient">Engineering Excellence</span></h2>
+                <p class="section-subtitle">Precision • Quality • Reliability — The foundation of Mars Engineering
+                    Solutions.</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-content animate-on-scroll">
+                    <div class="about-text">
+                        <ul class="about-points">
+                            <li>
+                                <div class="about-point-icon"><i data-lucide="factory"></i></div>
+                                <div><strong>Multi-disciplinary</strong> engineering firm based in Tamil Nadu</div>
+                            </li>
+                            <li>
+                                <div class="about-point-icon"><i data-lucide="user-check"></i></div>
+                                <div>Led by <strong>Mr. Manigandan Swaminathan</strong>, Managing Partner</div>
+                            </li>
+                            <li>
+                                <div class="about-point-icon"><i data-lucide="settings"></i></div>
+                                <div>Expertise in Electrical, Mechanical, Civil & Industrial engineering</div>
+                            </li>
+                            <li>
+                                <div class="about-point-icon"><i data-lucide="timer"></i></div>
+                                <div>On-time delivery, within budget, highest quality standards</div>
+                            </li>
+                            <li>
+                                <div class="about-point-icon"><i data-lucide="layers"></i></div>
+                                <div>Services: HT/LT electrical → Fire fighting → Fabrication → Interiors</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="about-visual animate-on-scroll">
+                    <div class="about-image-stack">
+                        <div class="about-img-card card-1"
+                            style="background-image: url('images/service_electrical.png');">
+                            <div class="about-img-overlay">
+                                <i data-lucide="zap"></i>
+                                <span>Electrical Excellence</span>
+                            </div>
+                        </div>
+                        <div class="about-img-card card-2"
+                            style="background-image: url('images/service_fabrication.png');">
+                            <div class="about-img-overlay">
+                                <i data-lucide="hammer"></i>
+                                <span>Precision Fabrication</span>
+                            </div>
+                        </div>
+                        <div class="about-img-card card-3" style="background-image: url('images/service_civil.png');">
+                            <div class="about-img-overlay">
+                                <i data-lucide="building"></i>
+                                <span>Civil Works</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-feature-badges">
+                        <div class="feature-badge">
+                            <i data-lucide="clock"></i>
+                            <span>On-Time Delivery</span>
+                        </div>
+                        <div class="feature-badge">
+                            <i data-lucide="shield-check"></i>
+                            <span>Quality Assured</span>
+                        </div>
+                        <div class="feature-badge">
+                            <i data-lucide="users"></i>
+                            <span>Expert Team</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section services">
+        <div class="section-industrial-bg"></div>
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <div class="section-tag">
+                    <div class="tag-line"></div>
+                    <i data-lucide="wrench"></i>
+                    <span>What We Do</span>
+                    <div class="tag-line"></div>
+                </div>
+                <h2 class="section-title">Our <span class="text-gradient">Services</span></h2>
+                <p class="section-subtitle">From concept to completion — tailored engineering solutions under one roof.
+                </p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card animate-on-scroll" data-delay="0">
+                    <div class="service-image" style="background-image: url('images/service_electrical.png');"></div>
+                    <div class="service-content">
+                        <div class="service-number">01</div>
+                        <div class="service-icon-wrap">
+                            <i data-lucide="zap"></i>
+                        </div>
+                        <h3>HT & LT Electrical Works</h3>
+                        <ul class="service-points">
+                            <li>HT & LT installations</li>
+                            <li>Transformers & panel boards</li>
+                            <li>Power distribution systems</li>
+                            <li>Industrial & commercial facilities</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="service-card animate-on-scroll" data-delay="100">
+                    <div class="service-image" style="background-image: url('images/service_mechanical.png');"></div>
+                    <div class="service-content">
+                        <div class="service-number">02</div>
+                        <div class="service-icon-wrap">
+                            <i data-lucide="cog"></i>
+                        </div>
+                        <h3>Mechanical Works</h3>
+                        <ul class="service-points">
+                            <li>HVAC installations</li>
+                            <li>Piping systems & machinery</li>
+                            <li>Industrial maintenance</li>
+                            <li>Precision engineering</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="service-card animate-on-scroll" data-delay="200">
+                    <div class="service-image" style="background-image: url('images/service_fire.png');"></div>
+                    <div class="service-content">
+                        <div class="service-number">03</div>
+                        <div class="service-icon-wrap">
+                            <i data-lucide="flame"></i>
+                        </div>
+                        <h3>Fire Fighting System</h3>
+                        <ul class="service-points">
+                            <li>Fire detection & suppression</li>
+                            <li>Sprinklers & hydrants</li>
+                            <li>Alarm systems</li>
+                            <li>Safety compliance solutions</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="service-card animate-on-scroll" data-delay="300">
+                    <div class="service-image" style="background-image: url('images/service_civil.png');"></div>
+                    <div class="service-content">
+                        <div class="service-number">04</div>
+                        <div class="service-icon-wrap">
+                            <i data-lucide="building"></i>
+                        </div>
+                        <h3>Civil Works</h3>
+                        <ul class="service-points">
+                            <li>Structural design & foundations</li>
+                            <li>Building construction</li>
+                            <li>Infrastructure development</li>
+                            <li>End-to-end project management</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="service-card animate-on-scroll" data-delay="400">
+                    <div class="service-image" style="background-image: url('images/service_fabrication.png');"></div>
+                    <div class="service-content">
+                        <div class="service-number">05</div>
+                        <div class="service-icon-wrap">
+                            <i data-lucide="hammer"></i>
+                        </div>
+                        <h3>Fabrication Works</h3>
+                        <ul class="service-points">
+                            <li>Structural steel fabrication</li>
+                            <li>Platforms & conveyors</li>
+                            <li>Tanks & vessels</li>
+                            <li>Custom industrial equipment</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="service-card animate-on-scroll" data-delay="500">
+                    <div class="service-image" style="background-image: url('industrial_peb_warehouse.png');"></div>
+                    <div class="service-content">
+                        <div class="service-number">06</div>
+                        <div class="service-icon-wrap">
+                            <i data-lucide="warehouse"></i>
+                        </div>
+                        <h3>PEB Works</h3>
+                        <ul class="service-points">
+                            <li>Pre-Engineered Buildings</li>
+                            <li>Warehouses & factories</li>
+                            <li>Faster construction time</li>
+                            <li>Cost-effective solutions</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="service-card animate-on-scroll" data-delay="600">
+                    <div class="service-image" style="background-image: url('images/hero_industrial.png');"></div>
+                    <div class="service-content">
+                        <div class="service-number">07</div>
+                        <div class="service-icon-wrap">
+                            <i data-lucide="paint-bucket"></i>
+                        </div>
+                        <h3>Interior Works</h3>
+                        <ul class="service-points">
+                            <li>Office & commercial interiors</li>
+                            <li>Modern design & execution</li>
+                            <li>Industrial facility fit-outs</li>
+                            <li>Aesthetic & functional spaces</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="service-card animate-on-scroll" data-delay="700">
+                    <div class="service-image" style="background-image: url('images/service_mechanical.png');"></div>
+                    <div class="service-content">
+                        <div class="service-number">08</div>
+                        <div class="service-icon-wrap">
+                            <i data-lucide="droplets"></i>
+                        </div>
+                        <h3>Plumbing Works</h3>
+                        <ul class="service-points">
+                            <li>Water supply systems</li>
+                            <li>Drainage & sanitary works</li>
+                            <li>Industrial piping</li>
+                            <li>Quality materials guaranteed</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section id="why-us" class="section why-us">
+        <div class="section-industrial-bg"></div>
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <div class="section-tag">
+                    <div class="tag-line"></div>
+                    <i data-lucide="award"></i>
+                    <span>Why Choose Us</span>
+                    <div class="tag-line"></div>
+                </div>
+                <h2 class="section-title">The Mars <span class="text-gradient">Advantage</span></h2>
+                <p class="section-subtitle">We build lasting partnerships — not just projects.</p>
+            </div>
+            <div class="why-us-grid">
+                <div class="why-card animate-on-scroll">
+                    <div class="why-card-top">
+                        <div class="why-card-icon">
+                            <i data-lucide="badge-check"></i>
+                        </div>
+                        <h3>Certified Professionals</h3>
+                    </div>
+                    <ul class="why-points">
+                        <li>Licensed engineers</li>
+                        <li>Certified technicians</li>
+                        <li>Extensive industry experience</li>
+                    </ul>
+                    <div class="why-card-accent"></div>
+                </div>
+                <div class="why-card animate-on-scroll">
+                    <div class="why-card-top">
+                        <div class="why-card-icon">
+                            <i data-lucide="indian-rupee"></i>
+                        </div>
+                        <h3>Competitive Pricing</h3>
+                    </div>
+                    <ul class="why-points">
+                        <li>Best value for money</li>
+                        <li>No compromise on quality</li>
+                        <li>Transparent costing</li>
+                    </ul>
+                    <div class="why-card-accent"></div>
+                </div>
+                <div class="why-card animate-on-scroll">
+                    <div class="why-card-top">
+                        <div class="why-card-icon">
+                            <i data-lucide="clock-4"></i>
+                        </div>
+                        <h3>Timely Execution</h3>
+                    </div>
+                    <ul class="why-points">
+                        <li>Deadline-driven approach</li>
+                        <li>Meticulous project planning</li>
+                        <li>Guaranteed on-time delivery</li>
+                    </ul>
+                    <div class="why-card-accent"></div>
+                </div>
+                <div class="why-card animate-on-scroll">
+                    <div class="why-card-top">
+                        <div class="why-card-icon">
+                            <i data-lucide="headphones"></i>
+                        </div>
+                        <h3>24/7 Support</h3>
+                    </div>
+                    <ul class="why-points">
+                        <li>Round-the-clock availability</li>
+                        <li>Technical support & maintenance</li>
+                        <li>Quick response times</li>
+                    </ul>
+                    <div class="why-card-accent"></div>
+                </div>
+                <div class="why-card animate-on-scroll">
+                    <div class="why-card-top">
+                        <div class="why-card-icon">
+                            <i data-lucide="layers"></i>
+                        </div>
+                        <h3>Multi-Discipline Expertise</h3>
+                    </div>
+                    <ul class="why-points">
+                        <li>All engineering needs under one roof</li>
+                        <li>Electrical, Mechanical, Civil</li>
+                        <li>Seamless project coordination</li>
+                    </ul>
+                    <div class="why-card-accent"></div>
+                </div>
+                <div class="why-card animate-on-scroll">
+                    <div class="why-card-top">
+                        <div class="why-card-icon">
+                            <i data-lucide="leaf"></i>
+                        </div>
+                        <h3>Sustainable Practices</h3>
+                    </div>
+                    <ul class="why-points">
+                        <li>Eco-friendly methods</li>
+                        <li>Energy-efficient solutions</li>
+                        <li>Green engineering standards</li>
+                    </ul>
+                    <div class="why-card-accent"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects / Portfolio Section -->
+    <section id="projects" class="section projects">
+        <div class="section-industrial-bg"></div>
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <div class="section-tag">
+                    <div class="tag-line"></div>
+                    <i data-lucide="folder-kanban"></i>
+                    <span>Our Portfolio</span>
+                    <div class="tag-line"></div>
+                </div>
+                <h2 class="section-title">Featured <span class="text-gradient">Projects</span></h2>
+                <p class="section-subtitle">Real projects. Real results. Engineering excellence delivered.</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card animate-on-scroll" data-delay="0">
+                    <div class="project-image">
+                        <img src="industrial_electrical.png" alt="Industrial Plant HT Installation" loading="lazy">
+                        <div class="project-image-overlay"></div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Electrical</span>
+                        <h3>Industrial Plant HT Installation</h3>
+                        <ul class="project-points">
+                            <li>50,000 sq.ft manufacturing facility</li>
+                            <li>Transformers & panel boards</li>
+                            <li>Complete HT electrical setup</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="project-card animate-on-scroll" data-delay="150">
+                    <div class="project-image">
+                        <img src="industrial_fire_safety.png" alt="Commercial Complex Fire System" loading="lazy">
+                        <div class="project-image-overlay"></div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Fire Safety</span>
+                        <h3>Commercial Complex Fire System</h3>
+                        <ul class="project-points">
+                            <li>Sprinkler & hydrant system</li>
+                            <li>Shopping complex coverage</li>
+                            <li>Full design & installation</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="project-card animate-on-scroll" data-delay="300">
+                    <div class="project-image">
+                        <img src="industrial_peb_warehouse.png" alt="Warehouse PEB Structure" loading="lazy">
+                        <div class="project-image-overlay"></div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">PEB</span>
+                        <h3>Warehouse PEB Structure</h3>
+                        <ul class="project-points">
+                            <li>30,000 sq.ft logistics warehouse</li>
+                            <li>Pre-Engineered Building design</li>
+                            <li>Modern amenities included</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customers Section -->
+    <section id="customers" class="section customers">
+        <div class="section-industrial-bg"></div>
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <div class="section-tag">
+                    <div class="tag-line"></div>
+                    <i data-lucide="handshake"></i>
+                    <span>Our Clients</span>
+                    <div class="tag-line"></div>
+                </div>
+                <h2 class="section-title">Trusted by <span class="text-gradient">Industry Leaders</span></h2>
+                <p class="section-subtitle">We are proud to serve some of the world's most renowned brands.</p>
+            </div>
+
+            <!-- Infinite Marquee Scroll -->
+            <div class="customers-marquee animate-on-scroll">
+                <div class="marquee-track">
+                    <!-- First set -->
+                    <div class="customer-card">
+                        <div class="customer-logo">
+                            <svg viewBox="0 0 120 80" class="customer-svg">
+                                <polygon points="60,8 72,28 48,28" fill="#E60012" />
+                                <polygon points="42,32 54,52 30,52" fill="#E60012" />
+                                <polygon points="78,32 90,52 66,52" fill="#E60012" />
+                            </svg>
+                        </div>
+                        <span class="customer-name">Mitsubishi Motors</span>
+                    </div>
+                    <div class="customer-card">
+                        <div class="customer-logo">
+                            <svg viewBox="0 0 120 80" class="customer-svg">
+                                <text x="60" y="35" text-anchor="middle" font-family="Arial Black, sans-serif"
+                                    font-weight="900" font-size="16" fill="#E8792B">DOOSAN</text>
+                                <text x="60" y="58" text-anchor="middle" font-family="Arial Black, sans-serif"
+                                    font-weight="900" font-size="20" fill="#333">Bobcat</text>
+                            </svg>
+                        </div>
+                        <span class="customer-name">Doosan Bobcat</span>
+                    </div>
+                    <div class="customer-card">
+                        <div class="customer-logo">
+                            <svg viewBox="0 0 120 80" class="customer-svg">
+                                <rect x="10" y="20" width="100" height="40" rx="4" fill="#C41230" opacity="0.1" />
+                                <text x="60" y="38" text-anchor="middle" font-family="Arial Black, sans-serif"
+                                    font-weight="900" font-size="14" fill="#C41230">RADCOFLEX</text>
+                                <text x="60" y="52" text-anchor="middle" font-family="Arial, sans-serif"
+                                    font-weight="400" font-size="8" fill="#C41230">flexible solutions</text>
+                            </svg>
+                        </div>
+                        <span class="customer-name">Radcoflex</span>
+                    </div>
+                    <div class="customer-card">
+                        <div class="customer-logo">
+                            <svg viewBox="0 0 120 80" class="customer-svg">
+                                <polygon points="25,25 35,50 25,50" fill="#00A0E3" />
+                                <text x="70" y="45" text-anchor="middle" font-family="Arial Black, sans-serif"
+                                    font-weight="900" font-size="18" fill="#00A0E3">DAIKIN</text>
+                            </svg>
+                        </div>
+                        <span class="customer-name">Daikin</span>
+                    </div>
+                    <div class="customer-card">
+                        <div class="customer-logo">
+                            <svg viewBox="0 0 120 80" class="customer-svg">
+                                <text x="60" y="50" text-anchor="middle" font-family="Georgia, serif" font-weight="700"
+                                    font-size="36" fill="#8B0000">UB</text>
+                            </svg>
+                        </div>
+                        <span class="customer-name">UB Group</span>
+                    </div>
+                    <div class="customer-card">
+                        <div class="customer-logo">
+                            <svg viewBox="0 0 120 80" class="customer-svg">
+                                <text x="60" y="48" text-anchor="middle" font-family="Arial, sans-serif"
+                                    font-weight="600" font-size="18" fill="#F5921E">Visteon</text>
+                                <ellipse cx="60" cy="45" rx="45" ry="22" fill="none" stroke="#F5921E" stroke-width="1"
+                                    stroke-dasharray="3,3" opacity="0.5" />
+                            </svg>
+                        </div>
+                        <span class="customer-name">Visteon</span>
+                    </div>
+                    <div class="customer-card">
+                        <div class="customer-logo">
+                            <svg viewBox="0 0 120 80" class="customer-svg">
+                                <rect x="15" y="22" width="36" height="36" rx="6" fill="#1A1A2E" />
+                                <text x="33" y="46" text-anchor="middle" font-family="Arial, sans-serif"
+                                    font-weight="700" font-size="18" fill="#fff">N</text>
+                                <text x="82" y="48" text-anchor="middle" font-family="Arial, sans-serif"
+                                    font-weight="600" font-size="16" fill="#1A1A2E">NeoLync</text>
+                            </svg>
+                        </div>
+                        <span class="customer-name">NeoLync</span>
+                    </div>
+                    <div class="customer-card">
+                        <div class="customer-logo">
+                            <svg viewBox="0 0 120 80" class="customer-svg">
+                                <text x="60" y="35" text-anchor="middle" font-family="Arial Black, sans-serif"
+                                    font-weight="900" font-size="26" fill="#009B3A">NS</text>
+                                <text x="60" y="55" text-anchor="middle" font-family="Arial, sans-serif"
+                                    font-weight="700" font-size="9" fill="#009B3A" letter-spacing="2">NIPPON
+                                    SEIKI</text>
+                            </svg>
+                        </div>
+                        <span class="customer-name">Nippon Seiki</span>
+                    </div>
+                    <!-- Duplicate set for seamless loop -->
+                    <div class="customer-card">
+                        <div class="customer-logo">
+                            <svg viewBox="0 0 120 80" class="customer-svg">
+                                <polygon points="60,8 72,28 48,28" fill="#E60012" />
+                                <polygon points="42,32 54,52 30,52" fill="#E60012" />
+                                <polygon points="78,32 90,52 66,52" fill="#E60012" />
+                            </svg>
+                        </div>
+                        <span class="customer-name">Mitsubishi Motors</span>
+                    </div>
+                    <div class="customer-card">
+                        <div class="customer-logo">
+                            <svg viewBox="0 0 120 80" class="customer-svg">
+                                <text x="60" y="35" text-anchor="middle" font-family="Arial Black, sans-serif"
+                                    font-weight="900" font-size="16" fill="#E8792B">DOOSAN</text>
+                                <text x="60" y="58" text-anchor="middle" font-family="Arial Black, sans-serif"
+                                    font-weight="900" font-size="20" fill="#333">Bobcat</text>
+                            </svg>
+                        </div>
+                        <span class="customer-name">Doosan Bobcat</span>
+                    </div>
+                    <div class="customer-card">
+                        <div class="customer-logo">
+                            <svg viewBox="0 0 120 80" class="customer-svg">
+                                <rect x="10" y="20" width="100" height="40" rx="4" fill="#C41230" opacity="0.1" />
+                                <text x="60" y="38" text-anchor="middle" font-family="Arial Black, sans-serif"
+                                    font-weight="900" font-size="14" fill="#C41230">RADCOFLEX</text>
+                                <text x="60" y="52" text-anchor="middle" font-family="Arial, sans-serif"
+                                    font-weight="400" font-size="8" fill="#C41230">flexible solutions</text>
+                            </svg>
+                        </div>
+                        <span class="customer-name">Radcoflex</span>
+                    </div>
+                    <div class="customer-card">
+                        <div class="customer-logo">
+                            <svg viewBox="0 0 120 80" class="customer-svg">
+                                <polygon points="25,25 35,50 25,50" fill="#00A0E3" />
+                                <text x="70" y="45" text-anchor="middle" font-family="Arial Black, sans-serif"
+                                    font-weight="900" font-size="18" fill="#00A0E3">DAIKIN</text>
+                            </svg>
+                        </div>
+                        <span class="customer-name">Daikin</span>
+                    </div>
+                    <div class="customer-card">
+                        <div class="customer-logo">
+                            <svg viewBox="0 0 120 80" class="customer-svg">
+                                <text x="60" y="50" text-anchor="middle" font-family="Georgia, serif" font-weight="700"
+                                    font-size="36" fill="#8B0000">UB</text>
+                            </svg>
+                        </div>
+                        <span class="customer-name">UB Group</span>
+                    </div>
+                    <div class="customer-card">
+                        <div class="customer-logo">
+                            <svg viewBox="0 0 120 80" class="customer-svg">
+                                <text x="60" y="48" text-anchor="middle" font-family="Arial, sans-serif"
+                                    font-weight="600" font-size="18" fill="#F5921E">Visteon</text>
+                                <ellipse cx="60" cy="45" rx="45" ry="22" fill="none" stroke="#F5921E" stroke-width="1"
+                                    stroke-dasharray="3,3" opacity="0.5" />
+                            </svg>
+                        </div>
+                        <span class="customer-name">Visteon</span>
+                    </div>
+                    <div class="customer-card">
+                        <div class="customer-logo">
+                            <svg viewBox="0 0 120 80" class="customer-svg">
+                                <rect x="15" y="22" width="36" height="36" rx="6" fill="#1A1A2E" />
+                                <text x="33" y="46" text-anchor="middle" font-family="Arial, sans-serif"
+                                    font-weight="700" font-size="18" fill="#fff">N</text>
+                                <text x="82" y="48" text-anchor="middle" font-family="Arial, sans-serif"
+                                    font-weight="600" font-size="16" fill="#1A1A2E">NeoLync</text>
+                            </svg>
+                        </div>
+                        <span class="customer-name">NeoLync</span>
+                    </div>
+                    <div class="customer-card">
+                        <div class="customer-logo">
+                            <svg viewBox="0 0 120 80" class="customer-svg">
+                                <text x="60" y="35" text-anchor="middle" font-family="Arial Black, sans-serif"
+                                    font-weight="900" font-size="26" fill="#009B3A">NS</text>
+                                <text x="60" y="55" text-anchor="middle" font-family="Arial, sans-serif"
+                                    font-weight="700" font-size="9" fill="#009B3A" letter-spacing="2">NIPPON
+                                    SEIKI</text>
+                            </svg>
+                        </div>
+                        <span class="customer-name">Nippon Seiki</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="section-industrial-bg"></div>
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <div class="section-tag">
+                    <div class="tag-line"></div>
+                    <i data-lucide="mail"></i>
+                    <span>Get In Touch</span>
+                    <div class="tag-line"></div>
+                </div>
+                <h2 class="section-title">Let's <span class="text-gradient">Connect</span></h2>
+                <p class="section-subtitle">Bridging the gap between your vision and engineering reality.</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info animate-on-scroll">
+                    <div class="contact-card">
+                        <div class="contact-card-header">
+                            <h3>Contact Information</h3>
+                            <p>Reach out through any of these channels. We're here to help!</p>
+                        </div>
+                        <div class="contact-items">
+                            <div class="contact-item">
+                                <div class="contact-item-icon">
+                                    <i data-lucide="user"></i>
+                                </div>
+                                <div>
+                                    <span class="contact-item-label">Managing Partner</span>
+                                    <span class="contact-item-value">Manigandan Swaminathan</span>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-item-icon">
+                                    <i data-lucide="phone"></i>
+                                </div>
+                                <div>
+                                    <span class="contact-item-label">Phone Numbers</span>
+                                    <span class="contact-item-value">
+                                        <a href="tel:+919790056067">+91-9790056067</a><br>
+                                        <a href="tel:+919047255069">+91-9047255069</a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-item-icon">
+                                    <i data-lucide="mail"></i>
+                                </div>
+                                <div>
+                                    <span class="contact-item-label">Email Address</span>
+                                    <span class="contact-item-value">
+                                        <a href="mailto:marsesolutions09@gmail.com">marsesolutions09@gmail.com</a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-item-icon">
+                                    <i data-lucide="globe"></i>
+                                </div>
+                                <div>
+                                    <span class="contact-item-label">Website</span>
+                                    <span class="contact-item-value">
+                                        <a href="https://www.marsesolutions.com"
+                                            target="_blank">www.marsesolutions.com</a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-item-icon">
+                                    <i data-lucide="map-pin"></i>
+                                </div>
+                                <div>
+                                    <span class="contact-item-label">Office Address</span>
+                                    <span class="contact-item-value">No-262A, Main Street, Ragavareddymedu, Thervazhi,
+                                        Gummidipoondi, Thiruvallur Dt, Tamil Nadu - 601201</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-wrap animate-on-scroll">
+                    <form id="contact-form" class="contact-form" novalidate>
+                        <h3>Send us a Message</h3>
+
+                        <!-- Honeypot field -->
+                        <div class="form-honey" aria-hidden="true" tabindex="-1">
+                            <label for="form-website">Website</label>
+                            <input type="text" id="form-website" name="website" tabindex="-1" autocomplete="off">
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="form-name">Your Name</label>
+                                <input type="text" id="form-name" name="name" placeholder="Enter your name" required
+                                    autocomplete="name" minlength="2" maxlength="100" pattern="^[A-Za-z\s.'-]{2,100}$"
+                                    title="Only letters, spaces, hyphens, apostrophes and dots are allowed">
+                                <span class="form-error" id="error-name"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-phone">Phone Number</label>
+                                <input type="tel" id="form-phone" name="phone" placeholder="e.g. +91-9876543210"
+                                    required autocomplete="tel" inputmode="tel" minlength="10" maxlength="15"
+                                    pattern="^[+]?[0-9\s-]{10,15}$"
+                                    title="Enter a valid phone number (10–15 digits, may start with +)">
+                                <span class="form-error" id="error-phone"></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="form-email">Email Address</label>
+                            <input type="email" id="form-email" name="email" placeholder="Your email address" required
+                                autocomplete="email" inputmode="email" maxlength="254"
+                                title="Enter a valid email address">
+                            <span class="form-error" id="error-email"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="form-service">Service Interested In</label>
+                            <select id="form-service" name="service" required autocomplete="off">
+                                <option value="" disabled selected>Select a service</option>
+                                <option value="ht-lt-electrical">HT &amp; LT Electrical Works</option>
+                                <option value="mechanical">Mechanical Works</option>
+                                <option value="fire-fighting">Fire Fighting System</option>
+                                <option value="civil">Civil Works</option>
+                                <option value="fabrication">Fabrication Works</option>
+                                <option value="peb">PEB Works</option>
+                                <option value="interior">Interior Works</option>
+                                <option value="plumbing">Plumbing Works</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <span class="form-error" id="error-service"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="form-message">Your Message</label>
+                            <textarea id="form-message" name="message" placeholder="Tell us about your project..."
+                                rows="4" required autocomplete="off" minlength="10" maxlength="2000"></textarea>
+                            <span class="form-error" id="error-message"></span>
+                        </div>
+
+                        <!-- Privacy Notice -->
+                        <div class="form-privacy">
+                            <i data-lucide="lock" class="privacy-icon"></i>
+                            <span>Your personal information is secure. We never share your data with third parties and
+                                use it only to respond to your inquiry.</span>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-full" id="form-submit">
+                            <span>Send Message</span>
+                            <i data-lucide="send" class="btn-icon"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-industrial-accent"></div>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <span class="logo-mars">MARS</span>
+                        <span class="logo-sub">Engineering Solutions</span>
+                    </div>
+                    <p>Your trusted partner for comprehensive engineering solutions. Delivering excellence across Tamil
+                        Nadu with integrity and innovation.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <a href="#hero">Home</a>
+                    <a href="#about">About Us</a>
+                    <a href="#services">Services</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-services">
+                    <h4>Our Services</h4>
+                    <a href="#services">HT & LT Electrical</a>
+                    <a href="#services">Mechanical Works</a>
+                    <a href="#services">Fire Fighting System</a>
+                    <a href="#services">Civil Works</a>
+                    <a href="#services">Fabrication Works</a>
+                    <a href="#services">PEB Works</a>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <div class="footer-contact-item">
+                        <i data-lucide="phone" style="width:16px;height:16px;"></i>
+                        <span>+91-9790056067</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i data-lucide="mail" style="width:16px;height:16px;"></i>
+                        <span>marsesolutions09@gmail.com</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i data-lucide="map-pin" style="width:16px;height:16px;"></i>
+                        <span>Gummidipoondi, Tamil Nadu</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Mars Engineering Solutions. All rights reserved.</p>
+                <p>Designed with <span class="heart">&hearts;</span> for Engineering Excellence</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+        <i data-lucide="chevron-up"></i>
+    </button>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
