@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 
 <head>
     <meta charset="UTF-8">
@@ -73,13 +73,24 @@
                 <a href="#why-us" class="nav-link" data-section="why-us">Why Us</a>
                 <a href="#projects" class="nav-link" data-section="projects">Projects</a>
                 <a href="#customers" class="nav-link" data-section="customers">Customers</a>
+                <a href="#reviews" class="nav-link" data-section="reviews">Reviews</a>
                 <a href="#contact" class="nav-link" data-section="contact">Contact</a>
             </div>
-            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+            <div class="nav-right">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light mode" title="Toggle dark/light mode">
+                    <div class="theme-toggle-track">
+                        <svg class="theme-toggle-icon icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                        <svg class="theme-toggle-icon icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                    </div>
+                    <div class="theme-toggle-thumb"></div>
+                </button>
+                <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+
         </div>
     </nav>
 
@@ -246,9 +257,34 @@
                     <span>What We Do</span>
                     <div class="tag-line"></div>
                 </div>
-                <h2 class="section-title">Our <span class="text-gradient">Services</span></h2>
-                <p class="section-subtitle">From concept to completion — tailored engineering solutions under one roof.
-                </p>
+                <h2 class="section-title">
+                    Our <span class="text-gradient">Services</span> for 
+                    <span class="running-text-badge">
+                        <span id="services-running-text" class="running-text-word">100% Certified Safety</span>
+                        <span class="running-text-cursor"></span>
+                    </span>
+                </h2>
+                <p class="section-subtitle">From concept to completion — engineered with precision to guarantee project success.</p>
+            </div>
+
+            <!-- Running Trust Words Ticker Ribbon -->
+            <div class="trust-ticker-wrap animate-on-scroll">
+                <div class="trust-ticker-track">
+                    <div class="trust-ticker-item"><i data-lucide="shield-check"></i> 100% SAFETY & ISO STANDARDS</div>
+                    <div class="trust-ticker-item"><i data-lucide="zap"></i> 500+ COMPLETED INDUSTRIAL PROJECTS</div>
+                    <div class="trust-ticker-item"><i data-lucide="clock"></i> GUARANTEED ON-TIME DELIVERY</div>
+                    <div class="trust-ticker-item"><i data-lucide="award"></i> LICENSED & CERTIFIED ENGINEERS</div>
+                    <div class="trust-ticker-item"><i data-lucide="headphones"></i> 24/7 DEDICATED TECHNICAL SUPPORT</div>
+                    <div class="trust-ticker-item"><i data-lucide="handshake"></i> TRUSTED BY INDUSTRY LEADERS</div>
+                    
+                    <!-- Duplicate set for seamless infinite loop -->
+                    <div class="trust-ticker-item"><i data-lucide="shield-check"></i> 100% SAFETY & ISO STANDARDS</div>
+                    <div class="trust-ticker-item"><i data-lucide="zap"></i> 500+ COMPLETED INDUSTRIAL PROJECTS</div>
+                    <div class="trust-ticker-item"><i data-lucide="clock"></i> GUARANTEED ON-TIME DELIVERY</div>
+                    <div class="trust-ticker-item"><i data-lucide="award"></i> LICENSED & CERTIFIED ENGINEERS</div>
+                    <div class="trust-ticker-item"><i data-lucide="headphones"></i> 24/7 DEDICATED TECHNICAL SUPPORT</div>
+                    <div class="trust-ticker-item"><i data-lucide="handshake"></i> TRUSTED BY INDUSTRY LEADERS</div>
+                </div>
             </div>
             <div class="services-grid">
                 <div class="service-card animate-on-scroll" data-delay="0">
@@ -749,6 +785,190 @@
         </div>
     </section>
 
+    <!-- Reviews & Testimonials Section -->
+    <section id="reviews" class="section reviews">
+        <div class="section-industrial-bg"></div>
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <div class="section-tag">
+                    <div class="tag-line"></div>
+                    <i data-lucide="star"></i>
+                    <span>Client Experience</span>
+                    <div class="tag-line"></div>
+                </div>
+                <h2 class="section-title">Client <span class="text-gradient">Reviews & Feedback</span></h2>
+                <p class="section-subtitle">Real feedback from industry leaders and partners who trust Mars Engineering Solutions.</p>
+            </div>
+
+            <!-- Review Overall Summary Stats -->
+            <div class="reviews-summary-bar animate-on-scroll">
+                <div class="summary-card">
+                    <div class="summary-score">4.9</div>
+                    <div class="summary-stars">
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                    </div>
+                    <span class="summary-label">Average Client Rating</span>
+                </div>
+                <div class="summary-divider"></div>
+                <div class="summary-card">
+                    <div class="summary-score" id="total-reviews-count">98+</div>
+                    <span class="summary-label">Verified Projects Rated</span>
+                </div>
+                <div class="summary-divider"></div>
+                <div class="summary-card">
+                    <div class="summary-score">99.4%</div>
+                    <span class="summary-label">On-Time Completion Rate</span>
+                </div>
+            </div>
+
+            <!-- 3D Reviews Container & Grid -->
+            <div class="reviews-grid" id="reviews-grid">
+                <!-- Card 1 -->
+                <div class="review-card animate-on-scroll" data-delay="0">
+                    <div class="review-card-top">
+                        <div class="reviewer-avatar avatar-1">MS</div>
+                        <div class="reviewer-meta">
+                            <h4>Manigandan S.</h4>
+                            <span class="reviewer-role">Operations Lead • Doosan Bobcat</span>
+                        </div>
+                        <div class="review-badge"><i data-lucide="shield-check"></i> Verified Client</div>
+                    </div>
+                    <div class="review-stars-display">
+                        <span class="stars-gold">★★★★★</span>
+                        <span class="rating-num">5.0</span>
+                    </div>
+                    <h5 class="review-title">"Outstanding HT/LT Electrical Execution"</h5>
+                    <p class="review-text">"Mars Engineering Solutions completed our plant's HT panel installation and transformer setup perfectly on schedule. Their team's technical precision and strict adherence to safety standards are commendable."</p>
+                    <div class="review-footer">
+                        <span class="review-service"><i data-lucide="zap"></i> HT & LT Electrical Works</span>
+                        <span class="review-date">August 2026</span>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="review-card animate-on-scroll" data-delay="150">
+                    <div class="review-card-top">
+                        <div class="reviewer-avatar avatar-2">RK</div>
+                        <div class="reviewer-meta">
+                            <h4>Ramesh Kumar</h4>
+                            <span class="reviewer-role">Plant Manager • Mitsubishi Motors</span>
+                        </div>
+                        <div class="review-badge"><i data-lucide="shield-check"></i> Verified Client</div>
+                    </div>
+                    <div class="review-stars-display">
+                        <span class="stars-gold">★★★★★</span>
+                        <span class="rating-num">5.0</span>
+                    </div>
+                    <h5 class="review-title">"Top-Tier PEB Warehouse Structure"</h5>
+                    <p class="review-text">"The Pre-Engineered Building structure fabricated by Mars Engineering was executed in record time. Excellent structural integrity, clean fabrication work, and seamless coordination throughout."</p>
+                    <div class="review-footer">
+                        <span class="review-service"><i data-lucide="warehouse"></i> PEB Works</span>
+                        <span class="review-date">July 2026</span>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="review-card animate-on-scroll" data-delay="300">
+                    <div class="review-card-top">
+                        <div class="reviewer-avatar avatar-3">VS</div>
+                        <div class="reviewer-meta">
+                            <h4>Vikram Sundaram</h4>
+                            <span class="reviewer-role">Safety Director • Daikin India</span>
+                        </div>
+                        <div class="review-badge"><i data-lucide="shield-check"></i> Verified Client</div>
+                    </div>
+                    <div class="review-stars-display">
+                        <span class="stars-gold">★★★★★</span>
+                        <span class="rating-num">5.0</span>
+                    </div>
+                    <h5 class="review-title">"Comprehensive Fire Safety Compliance"</h5>
+                    <p class="review-text">"Extremely satisfied with the fire fighting system installation. From sprinklers to alarm hydrants, everything was tested to perfection and approved without any delays."</p>
+                    <div class="review-footer">
+                        <span class="review-service"><i data-lucide="flame"></i> Fire Fighting System</span>
+                        <span class="review-date">June 2026</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add Review Interactive Card / Form -->
+            <div class="add-review-section animate-on-scroll">
+                <div class="add-review-card">
+                    <div class="add-review-header">
+                        <div class="add-review-icon">
+                            <i data-lucide="message-square-plus"></i>
+                        </div>
+                        <div>
+                            <h3>Share Your Project Experience</h3>
+                            <p>Have you worked with Mars Engineering Solutions? Rate our work and share your feedback with our community.</p>
+                        </div>
+                    </div>
+                    <form id="review-form" class="review-form" novalidate>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="review-name">Your Full Name</label>
+                                <input type="text" id="review-name" name="name" placeholder="e.g. Anand R." required minlength="2" maxlength="80">
+                                <span class="form-error" id="error-review-name"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="review-company">Company / Designation</label>
+                                <input type="text" id="review-company" name="company" placeholder="e.g. Project Manager, ABC Industries" required minlength="2" maxlength="100">
+                                <span class="form-error" id="error-review-company"></span>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="review-service">Service Received</label>
+                                <select id="review-service" name="service" required>
+                                    <option value="" disabled selected>Select service</option>
+                                    <option value="HT & LT Electrical Works">HT & LT Electrical Works</option>
+                                    <option value="Mechanical Works">Mechanical Works</option>
+                                    <option value="Fire Fighting System">Fire Fighting System</option>
+                                    <option value="Civil Works">Civil Works</option>
+                                    <option value="Fabrication Works">Fabrication Works</option>
+                                    <option value="PEB Works">PEB Works</option>
+                                    <option value="Interior Works">Interior Works</option>
+                                    <option value="Plumbing Works">Plumbing Works</option>
+                                </select>
+                                <span class="form-error" id="error-review-service"></span>
+                            </div>
+                            <div class="form-group">
+                                <label>Your Rating</label>
+                                <div class="rating-picker" id="rating-picker">
+                                    <button type="button" class="star-btn" data-value="1" aria-label="1 star">★</button>
+                                    <button type="button" class="star-btn" data-value="2" aria-label="2 stars">★</button>
+                                    <button type="button" class="star-btn" data-value="3" aria-label="3 stars">★</button>
+                                    <button type="button" class="star-btn" data-value="4" aria-label="4 stars">★</button>
+                                    <button type="button" class="star-btn active" data-value="5" aria-label="5 stars">★</button>
+                                    <span class="rating-label-text" id="rating-label-text">5.0 / 5 Stars (Excellent)</span>
+                                </div>
+                                <input type="hidden" id="review-rating" name="rating" value="5">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="review-headline">Review Headline</label>
+                            <input type="text" id="review-headline" name="headline" placeholder="Summarize your experience (e.g. Exceptional quality and timely delivery)" required minlength="5" maxlength="120">
+                            <span class="form-error" id="error-review-headline"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="review-comment">Detailed Feedback</label>
+                            <textarea id="review-comment" name="comment" rows="3" placeholder="Tell us about the engineering quality, safety, team professionalism, and execution..." required minlength="10" maxlength="1000"></textarea>
+                            <span class="form-error" id="error-review-comment"></span>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full" id="review-submit-btn">
+                            <span>Submit Review</span>
+                            <i data-lucide="send" class="btn-icon"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
     <!-- Contact Section -->
     <section id="contact" class="section contact">
         <div class="section-industrial-bg"></div>
@@ -921,6 +1141,7 @@
                     <a href="#about">About Us</a>
                     <a href="#services">Services</a>
                     <a href="#projects">Projects</a>
+                    <a href="#reviews">Reviews</a>
                     <a href="#contact">Contact</a>
                 </div>
                 <div class="footer-services">
